@@ -16,7 +16,7 @@ namespace ThreeLayerBizApp.Controllers
         public async Task<IActionResult> Index()
         {
             var employees = await employeeService.GetEmployeesAsync();  //this makes sure the business logic gets processed before returning the view
-            return View(employees);//Returns a list view of Employees
+            return View(employees);
         }
 
         public IActionResult Create()
